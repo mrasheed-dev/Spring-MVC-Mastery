@@ -13,5 +13,13 @@ public class HomeController
 	{
 		return "Welcome to my First Spring MVC Project";
 	}
+	
+	
+	@RequestMapping("/about")
+	@ResponseBody
+	public String about()
+	{
+		return "This is About Page";
+	}
 
 }
